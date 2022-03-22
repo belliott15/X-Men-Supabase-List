@@ -89,3 +89,22 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+#bottom-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+#bottom-section div{
+    margin: 10px;
+}
+
+.thumbnail img{
+    height: 300px;
+    width: 200px;
+}
+
