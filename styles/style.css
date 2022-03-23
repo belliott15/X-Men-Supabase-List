@@ -39,6 +39,13 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
+#details-main{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    background: linear-gradient(45deg, rgb(75, 41, 97), #333 50%, rgb(211, 156, 248) 75%, rgb(58, 58, 58) 80%);
+}
+
+
 section {
     max-width: 80%;
     display: flex;
@@ -196,3 +203,30 @@ footer {
     margin: 0 auto;
 }
 
+#display-section{
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#display-section div img{
+    height: 450px;
+    width: 300px;
+    border: yellow inset 6px;
+}
+
+#home-bar{
+    background: yellow;
+    border: black solid 3px;
+    height: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+
+}
