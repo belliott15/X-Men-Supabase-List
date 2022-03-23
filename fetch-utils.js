@@ -17,7 +17,7 @@ export async function fetchOneXPerson(id){
         .from('X-Men')
         .select('*')
         .match({ id: id })
-        .singular();
+        .single();
 
     return response.body;
 }

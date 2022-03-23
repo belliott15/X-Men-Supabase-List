@@ -6,7 +6,7 @@ export function renderXMen(xmen){
 
     anchorTag.href = `./details/?id=${xmen.id}`;
     xMenImgEl.src = xmen.image;
-    nameEl.textContent = xmen.name;
+    nameEl.textContent = xmen.alias;
 
     xMenDivEl.classList.add('thumbnail');
     xMenDivEl.append(xMenImgEl, nameEl);
@@ -31,9 +31,9 @@ export function renderOneXPerson(xmen){
     aliasEl.textContent = `AKA: ${xmen.alias}`;
     imgEl.src = xmen.image;
     
-    birthdayEl.textContent = xmen.date_of_birth;
-    abilityEl.textContent = xmen.ability;
-    powerLevelEl.textContent = xmen.power_rating_of_ten;
+    birthdayEl.textContent = `DOB: ${xmen.date_of_birth}`;
+    abilityEl.textContent = `Main Ability: ${xmen.ability}`;
+    powerLevelEl.textContent = `Power Level: ${xmen.power_rating_of_ten}/10`;
     bioEl.textContent = xmen.bio;
     affiliationsEl.textContent = `Teams: `;
 
