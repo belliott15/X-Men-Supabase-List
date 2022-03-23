@@ -101,17 +101,27 @@ footer {
 
 }
 
+#top-section > a{
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
 #middle-section{
-    background-image: url(/assets/X-men-logo.png);
-    opacity: .8;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px black solid;
+    border: 6px yellow inset;
     width: 100%;
     height: 100%;
+    background-color: rgb(56, 55, 55);
+    margin: 0 auto;
+}
+
+#middle-section > img{
+    height: 250px;
+    width: 600px;
 }
 
 #bottom-section{
@@ -125,10 +135,27 @@ footer {
 
 #bottom-section div{
     margin: 10px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    height: 400px;
+    padding: 10px
+}
+
+#bottom-section > a{
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
 }
 
 .thumbnail img{
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 175px;
+    margin: 0 auto;
 }
 
