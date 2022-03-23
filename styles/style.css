@@ -28,7 +28,6 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: white;
 }
 
 main {
@@ -37,6 +36,9 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background: linear-gradient(45deg, yellow, white, red 90%);
+    background-repeat: no-repeat;
+    background-size:auto
 }
 
 #details-main{
