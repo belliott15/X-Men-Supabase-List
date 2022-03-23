@@ -4,12 +4,21 @@ const SUPABASE_URL = 'https://cpwfuaqvwlzrtpauugot.supabase.co';
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-export async function fetchXMen(){
-    const response = await client
-        .from('X-Men')
-        .select('*');
+export async function fetchXMen(query){
+    if (!query){
+        const response = await client
+            .from('X-Men')
+            .select('*');
 
-    return response.body;
+        return response.body;
+    } else {
+        const response = await client
+            .from('X-Men')
+            .select('*')
+            .ilike('alias', `%${query}%`);
+
+        return response.body;
+    }
 }
 
 export async function fetchOneXPerson(id){
